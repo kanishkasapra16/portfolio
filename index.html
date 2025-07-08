@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kanishka Sapra | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.2);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #00ffff;
+    }
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+      padding: 2rem;
+    }
+    .hero img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 4px solid #00ffff;
+      box-shadow: 0 0 15px #00ffff80;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: #00ffff;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #00ffff;
+    }
+    .skills, .tools, .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .card {
+      background-color: rgba(255,255,255,0.05);
+      padding: 1.5rem;
+      border-radius: 10px;
+      width: 250px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.3);
+      font-size: 0.9rem;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Kanishka</h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="C:\Users\Dell\OneDrive\Desktop\WhatsApp Image 2025-07-08 at 21.13.59_125d178a.jpg" alt="Kanishka Sapra">
+    <h1>Hello, I'm Kanishka Sapra</h1>
+    <p>Computer Science Student | Aspiring Data Analyst</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p style="text-align: center; max-width: 700px; margin: auto;">
+      Motivated and detail-oriented CSE student specializing in AI & Data Science at Kurukshetra University.
+      Passionate about extracting insights from data and contributing to data-driven decisions.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills">
+      <div class="card">Python</div>
+      <div class="card">SQL</div>
+      <div class="card">C Language</div>
+      <div class="card">HTML & CSS</div>
+      <div class="card">OOPs Concepts</div>
+      <div class="card">Data Structures</div>
+      <div class="card">Communication Skills</div>
+    </div>
+
+    <h2 style="margin-top: 4rem;">Tools & Technologies</h2>
+    <div class="tools">
+      <div class="card">Power BI</div>
+      <div class="card">MS Excel</div>
+      <div class="card">Jupyter Notebook</div>
+      <div class="card">VS Code</div>
+      <div class="card">GitHub</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Walmart Data Analysis</h3>
+        <p>Analyzed sales data using Python libraries to discover patterns in customer behavior.</p>
+      </div>
+      <div class="card">
+        <h3>Blinkit Data Dashboard</h3>
+        <p>Created a Power BI dashboard presenting detailed analysis of Blinkit datasets.</p>
+      </div>
+      <div class="card">
+        <h3>Mobile Mart SQL Analysis</h3>
+        <p>Used SQL to analyze retail data and deliver insights for business improvement.</p>
+      </div>
+      <div class="card">
+        <h4> blinkit data analysis using python</h4>
+         <p> analysed the sales of blinkit using various pyhton functions on the blinkit dataset.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p style="text-align: center;">
+      📞 +91-8813951518<br>
+      📧 <a href="mailto:kanishkasapra2005@gmail.com" style="color:#00ffff">kanishkasapra2005@gmail.com</a><br>
+      🌐 <a href="https://www.linkedin.com/in/kanishka-sapra-b23912309" style="color:#00ffff" target="_blank">LinkedIn Profile</a>
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 Kanishka Sapra | Portfolio Website. Built with HTML, CSS, and JavaScript.
+  </footer>
+</body>
+</html>
